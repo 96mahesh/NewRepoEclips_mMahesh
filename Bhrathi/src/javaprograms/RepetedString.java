@@ -2,23 +2,16 @@ package javaprograms;
 
 import java.util.Scanner;
 
-public class RemoveDuplicates {
+public class RepetedString {
 
 	public static void main(String[] args) {
-		
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter Array Size");
-		int size = scan.nextInt();
+		String name = scan.nextLine();
 		
-		int a[] = new int [size];
-		System.out.println("Enter Array Value");
+		char a[] = name.toCharArray();
 		
-		for(int i=0;i<a.length;i++)
-		{
-			a[i] = scan.nextInt();
-		}
-		
-		int unique[] = new int[a.length],u=0;
+		char unique[] = new char[a.length],u=0;
 		int counter[] = new int[a.length],c=0;
 		for(int i=0;i<a.length;i++)
 		{
@@ -56,17 +49,12 @@ public class RemoveDuplicates {
 		System.out.println("After Remoive Duplicates");
 		for(int i=0;i<u;i++)
 		{
+			if(counter[i]>1)
 			System.out.println(unique[i]+" "+counter[i]);
 		}
+			
 		
 		scan.close();
-			
-		
-			
-			
-		
-		
 	}
-	
 	
 }
