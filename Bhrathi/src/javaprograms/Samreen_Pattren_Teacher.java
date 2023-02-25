@@ -1,6 +1,6 @@
 package javaprograms;
 
-public class Samreen_Pattren {
+public class Samreen_Pattren_Teacher {
 public static void main(String[] args) {
 
 	for(int i=1;i<=7;i++)
