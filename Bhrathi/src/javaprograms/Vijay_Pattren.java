@@ -38,18 +38,27 @@ public static void main(String[] args) {
 			else
 					System.out.print("  ");
 		}
-		for(int j=1;j<=9;j++)
+		
+		
+		for(int m=1;m<=8;m++)
 		{
-			if(j==8-i||i==j&&j<5)
+			if(i==m||m==8-i)
 			System.out.print("*");
 			else
-			{
-				System.out.print("  ");
-
-			}
+				System.out.print(" ");
+			
 		}
-		System.out.println();
 		
+		
+
+	System.out.println();
+	
+	
+	
+	
+	
 	}
+	
+	
 }
 }
