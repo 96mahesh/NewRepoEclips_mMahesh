@@ -32,6 +32,7 @@ public static void main(String[] args) {
 		for(int l=1;l<=8;l++)
 		{
 			
+			
 			if((l==1||l==i)||i==4&&l<4)
 				System.out.print("* ");
 			
