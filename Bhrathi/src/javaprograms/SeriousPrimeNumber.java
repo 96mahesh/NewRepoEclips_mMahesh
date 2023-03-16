@@ -5,7 +5,7 @@ public class SeriousPrimeNumber {
 	public static void main(String[] args) {
 		
 	    int lw =100;
-	    int up = 200;
+	    int up = 1000;
 	    int count = 0;
 	    for(int i=lw;i<=up;i++)
 	    {

@@ -224,6 +224,7 @@ public class CallenderDates {
 				Assert.assertEquals(innerHTML, setDate);
 			}
 		}
+		scan.close();
 			
 	}
 	
