@@ -22,7 +22,7 @@ public class WebTableTest {
 		String data = Ele.getText();
 		System.out.println(data);
 	}
-	System.out.println("Columun Size = : " +col.size());
+	System.err.println("Columun Size = : " +col.size());
 	
 	By RowL =By.xpath("//table[@class='dataTable']/tbody/tr");
 	List<WebElement> Row = driver.findElements(RowL);
@@ -30,7 +30,9 @@ public class WebTableTest {
 		String actualdata = ele.getText();
 		System.out.println(actualdata);
 	}
-	System.out.println("RowSize Size = : " +Row.size());
+	System.err.println("RowSize Size = : " +Row.size());
+	
+	driver.close();
 }
 }
 
