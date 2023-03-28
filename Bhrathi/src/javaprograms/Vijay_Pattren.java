@@ -2,7 +2,7 @@ package javaprograms;
 
 public class Vijay_Pattren {
 public static void main(String[] args) {
-	
+	int l;
 	for(int i=1;i<=7;i++)
 	{
 		for(int j=1;j<=15;j++)
@@ -29,27 +29,20 @@ public static void main(String[] args) {
 		{
 			System.out.print(" ");
 		}
-		for(int l=1;l<=8;l++)
+		for(l=1;l<=15;l++)
 		{
-			
-			
+						
 			if((l==1||l==i)||i==4&&l<4)
 				System.out.print("* ");
-			
+			else if(l==9 || (l==8&&i==3)||(l==7&&i==2)||(l==6&&i==1))
+			{
+				System.out.print(" * ");
+			}
 			else
 					System.out.print("  ");
-		}
 		
-		
-		for(int m=1;m<=8;m++)
-		{
-			if(i==m||m==8-i)
-			System.out.print("*");
-			else
-				System.out.print(" ");
 			
 		}
-		
 		
 
 	System.out.println();
