@@ -18,8 +18,13 @@ public class A_Pattren {
 					System.out.print("  ");
 			}
 			System.out.println();
+			
+			
+		}
+			
+			
 		}
 
-	}
+	
 
 }
