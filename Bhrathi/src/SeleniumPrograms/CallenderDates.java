@@ -12,6 +12,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.Color;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -19,10 +20,12 @@ import org.testng.annotations.Test;
 public class CallenderDates {
 	@Test
 	public void setup() throws Exception {
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter Dates");
-		String setDate = scan.nextLine();
-		WebDriver driver = new ChromeDriver();
+//		Scanner scan = new Scanner(System.in);
+//		System.out.println("Enter Dates");
+//		String setDate = scan.nextLine();
+		ChromeOptions cpt = new ChromeOptions();
+		cpt.addArguments("remote-allow-origins=*");
+		WebDriver driver = new ChromeDriver(cpt);
 		driver.get("https://jqueryui.com/datepicker/");
 		driver.manage().window().maximize();
 		
@@ -77,7 +80,7 @@ public class CallenderDates {
 		WebElement year = driver.findElement(yearL);
 		Assert.assertTrue(year.isDisplayed(), "Test script failed");
 
-		//String setDate = "03/05/2023";
+	    String setDate = "03/05/2023";
 		Date d = new SimpleDateFormat("MM/dd/yyy").parse(setDate);
 		System.out.println("Date to be Selectd :"+d);
 		String simpleDate = d.toString();
@@ -224,7 +227,7 @@ public class CallenderDates {
 				Assert.assertEquals(innerHTML, setDate);
 			}
 		}
-		scan.close();
+		//scan.close();
 			
 	}
 	

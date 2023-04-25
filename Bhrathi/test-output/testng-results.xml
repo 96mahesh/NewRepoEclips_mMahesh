@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-01T22:47:32 IST" name="Default suite" finished-at="2023-03-01T22:48:01 IST" duration-ms="29574">
+  <suite started-at="2023-04-22T10:34:15 IST" name="Default suite" finished-at="2023-04-22T10:34:21 IST" duration-ms="5546">
     <groups>
     </groups>
-    <test started-at="2023-03-01T22:47:32 IST" name="Default test" finished-at="2023-03-01T22:48:01 IST" duration-ms="29574">
+    <test started-at="2023-04-22T10:34:15 IST" name="Default test" finished-at="2023-04-22T10:34:21 IST" duration-ms="5546">
       <class name="SeleniumPrograms.CallenderDates">
-        <test-method signature="setup()[pri:0, instance:SeleniumPrograms.CallenderDates@2892dae4]" started-at="2023-03-01T22:47:32 IST" name="setup" finished-at="2023-03-01T22:48:01 IST" duration-ms="29522" status="PASS">
+        <test-method signature="setup()[pri:0, instance:SeleniumPrograms.CallenderDates@2892dae4]" started-at="2023-04-22T10:34:15 IST" name="setup" finished-at="2023-04-22T10:34:21 IST" duration-ms="5514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
